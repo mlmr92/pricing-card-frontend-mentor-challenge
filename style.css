@@ -1,0 +1,133 @@
+html {
+  box-sizing: border-box;
+  font-family: "Karla";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+  padding: 20px;
+}
+
+h2,
+h4,
+p {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#card {
+  box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#upper-part {
+  width: 100%;
+  height: 45%;
+  padding: 30px;
+}
+
+#upper-part h2 {
+  color: #2ab2af;
+  margin-bottom: 20px;
+}
+
+#upper-part h4 {
+  color: #c0df34;
+  margin-bottom: 10px;
+}
+
+#upper-part p {
+  color: #98a6bd;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+#lower-part {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 55%;
+  color: white;
+}
+
+#lower-left-part {
+  height: 100%;
+  background-color: #2ab2af;
+  padding: 30px;
+  flex-basis: 50%;
+}
+
+#lower-right-part {
+  height: 100%;
+  background-color: #2ebfbd;
+  padding: 30px;
+  flex-basis: 50%;
+}
+
+#price-container {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+#price {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+#per-month {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-left: 5px;
+}
+
+button {
+  color: white;
+  background-color: #c0df34;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: a9c42d;
+  transform: scale(1.02);
+}
+
+#lower-left-part h4 {
+  margin-bottom: 20px;
+}
+
+#lower-left-part p {
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+@media (min-width: 576px) {
+  #card {
+    width: 560px;
+    height: 400px;
+  }
+
+  #lower-part {
+    flex-direction: row;
+  }
+}
